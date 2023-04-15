@@ -10,7 +10,7 @@ function Home()
 {
     const [date, setDate] = useState(new Date())
     const navigate= useNavigate();
-    const dateString = date.toISOString().substring(0, 10);
+    const dateString = date.toLocaleDateString();
     return (
         <div className="home">
             <div className="Header">
